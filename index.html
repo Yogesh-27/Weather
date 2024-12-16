@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="assest/css/style.css" />
+</head>
+<body>
+  <div class="app-wrap">
+    <header>
+      <input type="text" autocomplete="off" id="search" class="search-box" placeholder="Search for a city..." />
+      <button class="button" type="submit" id="submit">Submit</button>
+    </header>
+    <main>
+      <section class="location">
+        <div class="city"><span id="cityName"></span> , <span id="country"></span></div>
+        <div class="date"><span id="date"></span></div>
+      </section>
+      <div class="current">
+        <div class="temp"><span id="temp"></span> <span>°c</span></div>
+        <div class="weather"><span id="weather"></span> </div><br>
+        <div class="humidity" >Humidity <span id="humidity"></span>%</div>
+        <div class="hi-low"><span id="hi"></span><span>°c</span> / <span id="low"></span><span>°c</span></div>
+      </div>
+    </main>
+  </div>
+  <script src="assest/javascript/script.js"></script>
+</body>
+</html>
