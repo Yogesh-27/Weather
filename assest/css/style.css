@@ -34,7 +34,6 @@ header input {
   background-color: rgba(255, 255, 255, 0.448);
   border-radius:  16px 0px 16px 0px;
   border-bottom: 3px solid gray;
-
   color: #313131;
   font-size: 20px;
   font-weight: 300;
@@ -49,60 +48,27 @@ header input:focus {
 }
 
 .button {
-  appearance: button;
   background-color: #1899D6;
   border: solid transparent;
   border-radius: 16px;
-  border-width: 0 0 4px;
-  box-sizing: border-box;
-  color: #FFFFFF;
+  color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: din-round,sans-serif;
-  font-size: 15px;
-  font-weight: 700;
-  letter-spacing: .8px;
-  line-height: 20px;
-  margin: 0;
+  font: 700 15px din-round, sans-serif;
   outline: none;
-  overflow: visible;
   padding: 13px 16px;
   text-align: center;
-  text-transform: uppercase;
-  touch-action: manipulation;
-  transform: translateZ(0);
-  transition: filter .2s;
   user-select: none;
-  -webkit-user-select: none;
-  vertical-align: middle;
   white-space: nowrap;
-  width: 10%;
-}
-
-.button:after {
-  background-clip: padding-box;
-  background-color: #1CB0F6;
-  border: solid transparent;
-  border-radius: 16px;
-  border-width: 0 0 4px;
-  bottom: -4px;
-  content: "";
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: -1;
+  width: fit-content;
 }
 
 .button:hover:not(:disabled) {
   filter: brightness(1.1);
-  -webkit-filter: brightness(1.1);
 }
-
 .button:disabled {
-  cursor: auto;
+  cursor: not-allowed;
 }
-
 .button:active {
   border-width: 4px 0 0;
   background: none;
@@ -117,19 +83,19 @@ main {
   text-align: center;
 }
 
-.location .city {
+.city {
   color: #fff;
   font-size: 32px;
   font-weight: 500;
   margin-bottom: 5px;
 }
 
-.location .date {
+.date {
   color: #fff;
   font-size: 16px;
 }
 
-.current .temp {
+.temp {
   color: #fff;
   font-size: 102px;
   font-weight: 900;
@@ -137,11 +103,11 @@ main {
   text-shadow: 2px 10px rgba(0, 0, 0, 0.6);
 }
 
-.current .temp span {
+.temp span {
   font-weight: 500;
 }
 
-.current .weather {
+.weather {
   color: #fff;
   font-size: 32px;
   font-weight: 700;
@@ -150,7 +116,7 @@ main {
   text-shadow: 0px 3px rgba(0, 0, 0, 0.4);
 }
 
-.current .hi-low,.current .humidity {
+.hi-low,.humidity {
   color: #fff;
   font-size: 24px;
   font-weight: 500;
